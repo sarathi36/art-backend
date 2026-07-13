@@ -17,7 +17,9 @@ app.use(
 // app.use(express.json());
 
 const getPictureRoute = require("./Route/getPictureRoute");
+const getChart = require('./Route/chartRoute')
 app.use("/api", getPictureRoute);
+app.use('/api' , getChart)
 
 
 const PORT = process.env.PORT || 3000;
